@@ -10,4 +10,4 @@ WORKDIR /mycode
 
 copy ./app.py app.py
 
-python3 app.py
+ENTRYPOINT [ "python3",  "app.py" ]
