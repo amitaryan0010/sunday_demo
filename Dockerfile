@@ -1,6 +1,6 @@
 FROM redhat/ubi8:8.10
 
-RUN yum install python39
+RUN yum install python39 -y
 
 RUN pip3 install flask
 
