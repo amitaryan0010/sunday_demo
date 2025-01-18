@@ -6,4 +6,4 @@ app = Flask(__name__)
 def lw():
     return "Welcome to Sunday demo"
 
-app.run(host='0.0.0.0', port=5000)
+#app.run(host='0.0.0.0', port=5000)
