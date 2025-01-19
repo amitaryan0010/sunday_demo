@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: myweb
+    app.kubernetes.io/instance: myweb
+  name: myweb
+  namespace: default
+spec:
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: myweb
+  type: LoadBalancer
+status:
+  loadBalancer: {}
